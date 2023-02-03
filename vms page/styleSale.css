@@ -1,0 +1,103 @@
+body {
+    background: url(PAGE_T-SHIRTS/wallpaperflare-cropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.SALE {
+    color: red;
+    text-align: center;
+    font-family: 'Allerta Stencil';
+    font-size: 100px;
+    cursor: default;
+    margin: 0 auto;
+}
+
+#Back {
+    text-decoration: none;
+    position: fixed;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    bottom: 20px;
+    right: 30px;
+    padding: 6px 4px;
+}
+
+/* Main */
+main {
+    width: max-content;
+
+}
+a textarea{
+    display: none;
+}
+
+main ul {
+    padding: 0 0;
+}
+
+main ul a li {
+    display: inline-block;
+}
+
+main>ul>a>li>p {
+    animation: pulse 2s infinite;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+.first-T-shirt {
+    background: url(PAGE_T-SHIRTS/DSLPURPLE_1.jpg);
+    padding: 150px 100.6px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: red;
+}
+
+.second-T-shirt {
+    background: url(PAGE_T-SHIRTS/RCWHITE_CHEETAH.jpg);
+    padding: 150px 96.6px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: red;
+}
+
+.third-T-shirt {
+    background: url(PAGE_T-SHIRTS/CK_1.webp);
+    padding: 150px 96.6px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: red;
+}
+
+.fourth-T-shirt {
+    background: url(PAGE_T-SHIRTS/RCWHITE_BIRD_1.jpg);
+    padding: 150px 96.6px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: red;
+}
+
+.fifth-T-shirt {
+    background: url(PAGE_T-SHIRTS/DSL_BLACK_01.webp);
+    padding: 150px 108.6px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: red;
+}

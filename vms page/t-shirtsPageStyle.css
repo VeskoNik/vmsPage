@@ -1,0 +1,84 @@
+body {
+  width: 1300px;
+  background: url(PAGE_T-SHIRTS/wall.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Back {
+  text-decoration: none;
+  position: fixed;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  bottom: 20px;
+  right: 30px;
+  padding: 6px 4px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 400px;
+  margin: 50px auto;
+  left: 490px;
+
+}
+
+/* First img to be visible when join and hide others */
+body>header>div>img:nth-child(1) {
+  display: block;
+}
+
+.mySlides {
+  display: none;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Fading animation */
+
+@keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  margin-top: -220px;
+  background-color: transparent;
+  cursor: pointer;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 330px;
+  border-radius: 3px 0 0 3px;
+  
+}
+
+.prev {
+  left: 350px;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background on buttons */
+.prev:hover,
+.next:hover,
+#Back:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

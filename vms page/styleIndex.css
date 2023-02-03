@@ -7,7 +7,7 @@ body {
 .navigation {
     margin: 0 auto;
 }
-
+/* Navigation stylisation */
 .navigation p a {
     display: inline-block;
     font-size: 40px;
@@ -19,7 +19,7 @@ body {
 #contact{
     cursor: pointer;
 }
-
+/* text in navigation VMS */
 .V {
 
     display: inline-block;
@@ -57,7 +57,7 @@ li {
     display: inline-block;
 
 }
-
+/*SALE text stylisation */
 a {
     text-decoration: none;
     font-size: 20px;
@@ -101,7 +101,7 @@ nav ul{
     background-position: center;
     background-size: cover;
 }
-
+/* Be Trendy text stylisation */
 .site-header h1 {
     animation: flicker 1.5s infinite alternate;
     color: white;
@@ -150,7 +150,7 @@ nav ul{
     padding-bottom: 30px;
 
 }
-
+/* Swipe Down button Stylisatin */
 .site-header div button {
     font-size: 20px;
     background-color: transparent;
@@ -193,14 +193,15 @@ nav ul{
 .site-header div button:hover {
     cursor: pointer;
 }
-
+/* Main (T-shirts) */
 main {
     background-color: rgba(0, 0, 0, 0.923)
 }
+/* Hiding the text where we get links for every t-shirt images */
 a textarea{
     display: none;
 }
-
+/* T-shirts rows stylisation and postioning */
 .T-shirts-first-row,
 .T-shirts-second-row {
     display: inline-block;
@@ -219,7 +220,7 @@ a textarea{
 .T-shirts-second-row ul li {
     margin: 0 0;
 }
-
+/* Price pulsating efect */
 main section p {
     animation: pulse 2s infinite;
 
@@ -234,7 +235,7 @@ main section p {
         transform: scale(2);
     }
 }
-
+/*T-shirts Stylisation */
 .Cavalli-cheetah-white {
     background: url(PAGE_T-SHIRTS/RCWHITE_CHEETAH.jpg);
     padding: 150px 119.6px;

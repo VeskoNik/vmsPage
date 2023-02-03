@@ -1,2 +1,2 @@
 # vmsPage
-building a site, with HTML,CSS and JS.
+building a page, with HTML,CSS and JS.

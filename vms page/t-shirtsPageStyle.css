@@ -4,7 +4,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+/* Back button stylisation */
 #Back {
   text-decoration: none;
   position: fixed;
@@ -29,7 +29,7 @@ body {
 body>header>div>img:nth-child(1) {
   display: block;
 }
-
+/* Fading slides when change the picture */
 .mySlides {
   display: none;
   animation-name: fade;

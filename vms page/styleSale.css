@@ -3,7 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* Sale text stylisation */
+
 .SALE {
     color: red;
     text-align: center;
@@ -12,7 +12,7 @@ body {
     cursor: default;
     margin: 0 auto;
 }
-/* Back button stylisation */
+
 #Back {
     text-decoration: none;
     position: fixed;
@@ -30,20 +30,26 @@ main {
     width: max-content;
 
 }
-/* Hiding the text where we get links for every t-shirt */
-a textarea{
+div textarea{
     display: none;
 }
-
+div {
+    margin: 2px;
+}
 main ul {
     padding: 0 0;
 }
+p{
+    font-family: 'Allerta Stencil';
+    font-size: 13.5px;
+}
 
-main ul a li {
+div{
+    list-style-type: none;
     display: inline-block;
 }
 
-main>ul>a>li>p {
+main>ul>div>li>p {
     animation: pulse 2s infinite;
 
 }
@@ -57,7 +63,7 @@ main>ul>a>li>p {
         transform: scale(2);
     }
 }
-/* t-shirts positioning and stylisation */
+
 .first-T-shirt {
     background: url(PAGE_T-SHIRTS/DSLPURPLE_1.jpg);
     padding: 150px 100.6px;
@@ -65,6 +71,7 @@ main>ul>a>li>p {
     background-position: center;
     background-repeat: no-repeat;
     color: red;
+    cursor: pointer;
 }
 
 .second-T-shirt {
@@ -74,6 +81,7 @@ main>ul>a>li>p {
     background-position: center;
     background-repeat: no-repeat;
     color: red;
+    cursor: pointer;
 }
 
 .third-T-shirt {
@@ -83,22 +91,25 @@ main>ul>a>li>p {
     background-position: center;
     background-repeat: no-repeat;
     color: red;
+    cursor: pointer;
 }
 
 .fourth-T-shirt {
     background: url(PAGE_T-SHIRTS/RCWHITE_BIRD_1.jpg);
-    padding: 150px 96.6px;
+    padding: 150px 100.6px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: red;
+    cursor: pointer;
 }
 
 .fifth-T-shirt {
-    background: url(PAGE_T-SHIRTS/DSL_BLACK_01.webp);
-    padding: 150px 108.6px;
+    background: url(PAGE_T-SHIRTS/RC_CHEETAH_BLACK1.webp);
+    padding: 150px 104.6px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: red;
+    cursor: pointer;
 }

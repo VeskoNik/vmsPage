@@ -7,19 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men T-Shirts</title>
     <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
-    <link rel="stylesheet" href="styleIndex.css">
-    <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="styleIndex.css" id="main-page-css">
+    <link rel="stylesheet" href="styleSale.css" id="sale-page-css">
+    <link rel="stylesheet" href="t-shirtsPageStyle.css" id="shirts-page-css">
+    <link rel="shortcut icon" href="./PAGE_T-SHIRTS/android-chrome-192x192.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/afdf8c45de.js" crossorigin="anonymous"></script>
-    <script src="path.js"></script>
+    <script id="path" src="path.js"></script>
+    <script src="slideshow.js"></script>
+    <script src="page.js"></script>
+
 </head>
 
-<body>
-    <header>
+<body id="body" onload="document.getElementById('sale-page-css').disabled = true;document.getElementById('shirts-page-css').disabled = true;">
+    <header id="header">
         <section class="navigation">
             <nav>
                 <ul>
-                    <li><a href="sale.html">SALE</a></li>
-                    <li onclick="contact()" id="contact"><a>CONTACT US</a></li>
+                    <li onclick="sale()">SALE</li>
+                    <li id="contact" onclick="window.alert(' Mobile phone: +359898843676 \n email: vesmenstore@mail.bg')" >CONTACT US</li>
                     <li><span class="V">V</span><span class="M">M</span><span class="S">S</span></li>
                     <li>
                         <ul>
@@ -34,33 +39,33 @@
         </section>
         <section class="site-header">
             <h1>Be Trendy</h1>
-            <div><button onclick="goToMain()">Swipe Down</button></div>
+            <div><button onclick="document.body.scrollTop = 710;document.documentElement.scrollTop = 710;">Swipe Down</button></div>
         </section>
     </header>
-    <main>
+    <main id="main">
         <section class="T-shirts-first-row">
             <ul>
-                <a href="shirts.html">
+                <a>
                     <textarea>PAGE_T-SHIRTS/RC_CHEETAH_WHITE_VMS.jpeg,PAGE_T-SHIRTS/RCWHITE_CHEETAH_1.jpg,PAGE_T-SHIRTS/RCWHITE_CHEETAH_2.jpg,PAGE_T-SHIRTS/RCWHITE_CHEETAH_3.jpg,PAGE_T-SHIRTS/RCWHITE_CHEETAH_4.jpg</textarea>
-                    <li class="Cavalli-cheetah-white" onclick="addEventListener('click', onClick(event))">
+                    <li class="Cavalli-cheetah-white" onclick="addEventListener('click',onClick)" >
                         <p>59,99лв</p>
                     </li>
                 </a>
-                <a href="shirts.html">
+                <a>
                     <textarea>PAGE_T-SHIRTS/DIESEL_PURPLE_VMS.jpeg,PAGE_T-SHIRTS/DSL_PURPLE_PAGE_01.jpeg,PAGE_T-SHIRTS/DSL_PURPLE_PAGE_02.jpeg,PAGE_T-SHIRTS/DSL_PURPLE_PAGE_03.jpeg</textarea>
-                    <li class="Diesel-purple" onclick="addEventListener('click', onClick(event))">
+                    <li class="Diesel-purple" onclick="addEventListener('click',onClick)" >
                         <p>40,99лв</p>
                     </li>
                 </a>
-                <a href="shirts.html">
+                <a>
                     <textarea>PAGE_T-SHIRTS/RC_EAGLE_VMS.jpeg,PAGE_T-SHIRTS/RCWHITE_BIRD_1.jpg,PAGE_T-SHIRTS/RCWHITE_BIRD_BACK.jpg</textarea>
-                    <li class="Cavalli-eagle" onclick="addEventListener('click', onClick(event))">
+                    <li class="Cavalli-eagle" onclick="addEventListener('click',onClick)" >
                         <p>59,99лв</p>
                     </li>
                 </a>
-                <a href="shirts.html">
+                <a>
                     <textarea>PAGE_T-SHIRTS/CK_VMS.jpeg,PAGE_T-SHIRTS/CK_PAGE-01.jpeg,PAGE_T-SHIRTS/CK_PAGE_02.webp,PAGE_T-SHIRTS/CK_2.jpg</textarea>
-                    <li class="CK" onclick="addEventListener('click', onClick(event))">
+                    <li class="CK" onclick="addEventListener('click',onClick)" >
                         <p>40,99лв</p>
                     </li>
                 </a>
@@ -68,34 +73,34 @@
         </section>
         <section class="T-shirts-second-row">
             <ul>
-                <a href="shirts.html">
+                <a>
                     <textarea>PAGE_T-SHIRTS/RC_CHEETAH_BLACK_VMS.jpeg,PAGE_T-SHIRTS/RCBLACK_CHEETAH_3.jpg,PAGE_T-SHIRTS/RCBLACK_CHEETAH_copy.jpg,PAGE_T-SHIRTS/RCBLACK_CHEETAH_4.jpg</textarea>
-                    <li class="Cavalli-cheetah-black" onclick="addEventListener('click', onClick(event))">
+                    <li class="Cavalli-cheetah-black" onclick="addEventListener('click',onClick)">
                         <p>59,99лв</p>
                     </li>
                 </a>
-                <a href="shirts.html">
+                <a>
                     <textarea>PAGE_T-SHIRTS/RC_TIGER_VMS.jpeg,PAGE_T-SHIRTS/RCWHITE_TIGER_2.jpg,PAGE_T-SHIRTS/RCWHITE_TIGER_BACK.jpg</textarea>
-                    <li class="Cavalli-tiger" onclick="addEventListener('click', onClick(event))">
+                    <li class="Cavalli-tiger" onclick="addEventListener('click', onClick)" >
                         <p>69,99лв</p>
                     </li>
                 </a>
-                <a href="shirts.html">
+                <a>
                     <textarea>PAGE_T-SHIRTS/DIESEL_BLACK_VMS.jpeg,PAGE_T-SHIRTS/DSLBLACK_PAGE_01.jpeg,PAGE_T-SHIRTS/DSLBLACK_PAGE_02.jpeg</textarea>
-                    <li class="Diesel-black" onclick="addEventListener('click', onClick(event))">
+                    <li class="Diesel-black" onclick="addEventListener('click', onClick)" >
                         <p>49,99лв</p>
                     </li>
                 </a>
-                <a href="shirts.html">
+                <a>
                     <textarea>PAGE_T-SHIRTS/DIESEL_NEON_VMS.jpeg,PAGE_T-SHIRTS/DSLYELLOW_DIESELNATION.jpg,PAGE_T-SHIRTS/DSLYELLOW_DIESELNATION_1.jpg,PAGE_T-SHIRTS/DSLYELLOW_DIESELNATION_2.jpg</textarea>
-                    <li class="Diesel-neon" onclick="addEventListener('click', onClick(event))">
+                    <li class="Diesel-neon" onclick="addEventListener('click', onClick)" >
                         <p>49,99лв</p>
                     </li>
                 </a>
             </ul>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <section class="Rights-and-Social">
             <ul>
                 <li>CopyRight 2022,All Rights Reserved</li>
@@ -103,17 +108,6 @@
                 <li><a href="https://www.facebook.com/vesmenstore/"><i class="fa-brands fa-facebook"></i></a></li>
             </ul>
         </section>
-        <script>
-            function goToMain() {
-                document.body.scrollTop = 710;
-                document.documentElement.scrollTop = 710;
-            };
-            function contact() {
-                window.alert(' Mobile phone: +359898843676 \n email: vesmenstore@mail.bg');
-            };
-
-
-        </script>
     </footer>
 </body>
 
